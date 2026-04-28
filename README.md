@@ -12,7 +12,7 @@ The full lab website is in development. This page is a focused archive of HOSL m
 
 AI safety frameworks widely assume that human oversight provides a reliable control mechanism for AI systems.
 
-[PDF](papers/oversight_that_degrades_tais_2026.pdf)
+[PDF](papers/oversight_that_degrades_tais_2026.pdf) · [Poster](papers/oversight_that_degrades_tais_2026_poster.pdf)
 
 ## About the lab
 
