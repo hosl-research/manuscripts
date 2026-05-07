@@ -8,11 +8,11 @@ The full lab website is in development. This page is a focused archive of HOSL m
 
 ### Oversight That Degrades: Architectural Failure Modes in Human-LLM Control Structures
 
-**Brian Moriarty.** Accepted, 3rd Technical AI Safety Conference, Oxford, UK, 2026.
+**Brian Moriarty.** Published in the proceedings of the 3rd Technical AI Safety Conference (TAIS 2026), Oxford, UK.
 
 AI safety frameworks widely assume that human oversight provides a reliable control mechanism for AI systems.
 
-[PDF](papers/oversight_that_degrades_tais_2026.pdf) · [Poster](papers/oversight_that_degrades_tais_2026_poster.pdf)
+[PDF](papers/oversight_that_degrades_tais_2026.pdf) · [Poster](papers/oversight_that_degrades_tais_2026_poster.pdf) · [Proceedings page](https://tais2026.cc/proceedings/moriarty-oversight-degrades)
 
 ## About the lab
 
