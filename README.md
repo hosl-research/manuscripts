@@ -20,7 +20,7 @@ AI safety frameworks widely assume that human oversight provides a reliable cont
 
 Large language models are rapidly diffusing into academic and enterprise knowledge work, yet most deployments lack explicit collaboration architectures, leading to inconsistent outcomes, unclear accountability, and unresolved risk exposure.
 
-[PDF](papers/from_classroom_to_enterprise_syscon_2026.pdf)
+[PDF](papers/from_classroom_to_enterprise_syscon_2026.pdf) · [IEEE Xplore](https://ieeexplore.ieee.org/document/11503623)
 
 ## Slides
 
