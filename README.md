@@ -1,13 +1,18 @@
 # HOSL Manuscripts
-
 Public archive of papers from the Human Oversight Systems Lab (HOSL), School of Business, Stevens Institute of Technology.
 
 The full lab website is in development. This page is a focused archive of HOSL manuscripts that are public-facing; new entries appear as papers reach a public-OK state (preprint posted, accepted, or published).
 
 ## Papers
 
-### Oversight That Degrades: Architectural Failure Modes in Human-LLM Control Structures
+### Confirming Process, Missing Function: The Uninstrumented Oversight Layer in AI Transparency and Control Research
+**Brian Moriarty.** Published in the proceedings of the AI Transparency Conference (AITC 2026), Nuremberg, Germany.
 
+Audit infrastructure for AI-assisted workflows can document that human review occurred without establishing whether substantive evaluative judgment was exercised. The paper identifies the uninstrumented oversight layer as a structural gap in AI transparency and control research, and proposes a measurement and design agenda for the governance infrastructure that current frameworks lack.
+
+[PDF](papers/confirming_process_aitc_2026.pdf) · [Poster](papers/confirming_process_aitc_2026_poster.pdf) · [Slides (forthcoming)](slides/confirming_process_aitc_2026_slides.pdf)
+
+### Oversight That Degrades: Architectural Failure Modes in Human-LLM Control Structures
 **Brian Moriarty.** Published in the proceedings of the 3rd Technical AI Safety Conference (TAIS 2026), Oxford, UK.
 
 AI safety frameworks widely assume that human oversight provides a reliable control mechanism for AI systems.
@@ -15,7 +20,6 @@ AI safety frameworks widely assume that human oversight provides a reliable cont
 [PDF](papers/oversight_that_degrades_tais_2026.pdf) · [Poster](papers/oversight_that_degrades_tais_2026_poster.pdf) · [Proceedings page](https://tais2026.cc/proceedings/moriarty-oversight-degrades)
 
 ### From Classroom to Enterprise: Architectural Patterns for LLM Integration
-
 **Brian Moriarty.** Published in the proceedings of IEEE SysCon 2026.
 
 Large language models are rapidly diffusing into academic and enterprise knowledge work, yet most deployments lack explicit collaboration architectures, leading to inconsistent outcomes, unclear accountability, and unresolved risk exposure.
@@ -25,7 +29,6 @@ Large language models are rapidly diffusing into academic and enterprise knowled
 ## Slides
 
 ### From Classroom to Enterprise: Architectural Patterns for LLM Integration
-
 **Brian Moriarty.** Slides from the IEEE SysCon 2026 talk.
 
 [Slides](slides/from_classroom_to_enterprise_syscon_2026_slides.pdf)
