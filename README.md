@@ -10,7 +10,7 @@ The full lab website is in development. This page is a focused archive of HOSL m
 
 Audit infrastructure for AI-assisted workflows can document that human review occurred without establishing whether substantive evaluative judgment was exercised. The paper identifies the uninstrumented oversight layer as a structural gap in AI transparency and control research, and proposes a measurement and design agenda for the governance infrastructure that current frameworks lack.
 
-[PDF](papers/confirming_process_aitc_2026.pdf) · [Poster](papers/confirming_process_aitc_2026_poster.pdf) · [Slides (forthcoming)](slides/confirming_process_aitc_2026_slides.pdf)
+[PDF](papers/confirming_process_aitc_2026.pdf) · [Poster](papers/confirming_process_aitc_2026_poster.pdf) · [Slides](slides/confirming_process_aitc_2026_slides.pdf)
 
 ### Oversight That Degrades: Architectural Failure Modes in Human-LLM Control Structures
 **Brian Moriarty.** Published in the proceedings of the 3rd Technical AI Safety Conference (TAIS 2026), Oxford, UK.
