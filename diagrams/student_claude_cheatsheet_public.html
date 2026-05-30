@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOSL Claude quick reference</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --muted:#5b5b5b; --line:#d8d6d0; --bg:#ffffff;
+    --panel:#f6f4ef; --accent:#3b5b8c; --accentbg:#eef2f8; --warn:#7a3b2e; --warnbg:#f6ece8;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:12px;line-height:1.4;}
+  .page{max-width:1100px;margin:0 auto;padding:22px 26px;}
+  header{border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:14px;}
+  h1{font-size:20px;margin:0 0 2px;}
+  header p{margin:0;color:var(--muted);font-size:12px;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .card{border:1px solid var(--line);border-radius:8px;padding:11px 13px;background:var(--bg);}
+  .card.span2{grid-column:span 2;}
+  .card.fill{background:var(--panel);}
+  h2{font-size:12.5px;margin:0 0 7px;text-transform:uppercase;letter-spacing:.04em;color:var(--accent);}
+  ul{margin:0;padding-left:16px;}
+  li{margin:0 0 3px;}
+  .k{font-weight:600;}
+  .muted{color:var(--muted);}
+  .layers div{border:1px solid var(--line);border-radius:6px;padding:5px 8px;margin-bottom:5px;background:var(--bg);}
+  .layers .top{border-left:4px solid var(--accent);}
+  .layers .mid{border-left:4px solid #8a9bb5;}
+  .layers .you{border-left:4px solid #b58a3a;background:var(--accentbg);}
+  .blocks div{padding:4px 0;border-bottom:1px dashed var(--line);}
+  .blocks div:last-child{border-bottom:none;}
+  .rules{background:var(--warnbg);border-color:#e3c9bf;}
+  .rules h2{color:var(--warn);}
+  .proj{display:flex;gap:8px;align-items:stretch;}
+  .proj .box{flex:1;border:1px solid var(--line);border-radius:6px;padding:7px 9px;background:var(--bg);}
+  .proj .loose{flex:0 0 32%;border-style:dashed;color:var(--muted);}
+  .tag{display:inline-block;font-size:10px;background:var(--accentbg);color:var(--accent);
+    border-radius:4px;padding:1px 6px;margin-bottom:4px;font-weight:600;}
+  .tag.work{background:#eee;color:#444;}
+  footer{margin-top:14px;padding-top:9px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:11px;display:flex;justify-content:space-between;}
+  @media print{body{font-size:10.5px;} .page{padding:0;} .card{break-inside:avoid;}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Claude for the lab: one-page quick reference</h1>
+    <p>Human Oversight Systems Lab. Full detail is in the setup guide; this is the at-a-glance version.</p>
+  </header>
+
+  <div class="grid">
+
+    <div class="card fill">
+      <h2>1. Set up your account (about 10 min)</h2>
+      <ul>
+        <li><span class="k">Instructions for Claude:</span> paste the lab text (concise, voice rules, ask before multi-step).</li>
+        <li><span class="k">Memory:</span> generate off, import off.</li>
+        <li><span class="k">Connector discovery:</span> off. <span class="k">Location:</span> off.</li>
+        <li><span class="k">Artifacts</span> and <span class="k">inline visualizations:</span> on. AI-powered artifacts off.</li>
+        <li><span class="k">Claude Code:</span> auto-PR off, autofix-PR off, classify-sessions off.</li>
+        <li><span class="k">Notifications:</span> response completions on, code permission requests on.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>2. Connect GitHub</h2>
+      <ul>
+        <li>Your lab GitHub access is set up; the lab repos are visible to you.</li>
+        <li>Settings &rarr; Connectors &rarr; GitHub &rarr; Connect (pre-approved, no wait).</li>
+        <li>In a chat: attach (+) &rarr; Add content from GitHub &rarr; pick repo + files.</li>
+        <li>Coding: set up local git (SSH key or gh CLI), then clone.</li>
+      </ul>
+    </div>
+
+    <div class="card fill">
+      <h2>Usage limits (read this)</h2>
+      <ul>
+        <li>One shared budget across web chat, Claude Code, desktop.</li>
+        <li>A rolling 5-hour window plus a weekly cap. Resets roll, not at midnight.</li>
+        <li>Hit a limit and you pause until reset. No extra charge.</li>
+        <li>Stay under: fresh chat per topic, lighter model for routine work, no long unattended runs.</li>
+        <li>Blocked weekly a lot? Tell the PI; we will find a tighter workflow.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. The four building blocks</h2>
+      <div class="blocks">
+        <div><span class="k">Instructions</span> standing guidance. You set your own.</div>
+        <div><span class="k">Skills</span> reusable task abilities. Use the approved set.</div>
+        <div><span class="k">Plugins</span> bundles of skills + connectors. PI installs.</div>
+        <div><span class="k">Connectors</span> links to outside tools (GitHub). PI approves.</div>
+      </div>
+      <p class="muted" style="margin:6px 0 0;">PI curates the set; you personalize your instructions.</p>
+    </div>
+
+    <div class="card">
+      <h2>4. Three layers of instructions</h2>
+      <div class="layers">
+        <div class="top"><span class="k">Organization</span> <span class="muted">set by PI, applies to all, locked</span></div>
+        <div class="mid"><span class="k">Project</span> <span class="muted">per project (e.g. Knowledge Base)</span></div>
+        <div class="you"><span class="k">Personal</span> <span class="muted">yours to set, in Profile</span></div>
+      </div>
+      <p class="muted" style="margin:6px 0 0;">Higher layer wins. Add a personal one when you repeat yourself every session.</p>
+    </div>
+
+    <div class="card span2">
+      <h2>5. Work in projects, not loose chats</h2>
+      <div class="proj">
+        <div class="box">
+          <span class="tag">Project: your work</span>
+          <div><span class="k">Knowledge base</span> (set once): design docs, contracts, repo conventions.</div>
+          <div style="margin-top:4px;"><span class="tag work">Chats (many)</span> scaffold, debug, draft, prep notes. All share the knowledge.</div>
+        </div>
+        <div class="box loose">
+          <span class="tag work">Loose chat</span>
+          Outside any project. Knows none of the lab context. Use only for throwaway, non-lab questions.
+        </div>
+      </div>
+      <p class="muted" style="margin:6px 0 0;">Keep projects coarse: one per real body of work, not one per task and not one catch-all.</p>
+    </div>
+
+    <div class="card rules">
+      <h2>The rules (non-negotiable)</h2>
+      <ul>
+        <li>No identifiable participant data in any chat, ever. De-identify first.</li>
+        <li>No free consumer AI tools for study work.</li>
+        <li>No new AI tool on study work without asking first.</li>
+        <li>Read every line of AI-written code or text before it ships.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Reach Claude</h2>
+      <ul>
+        <li><span class="k">Web / desktop:</span> main workspace; use the project.</li>
+        <li><span class="k">Slack:</span> ask the bot in our workspace.</li>
+        <li><span class="k">Claude Code:</span> terminal, IDE, or desktop, for repo work.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Making a skill</h2>
+      <ul>
+        <li>Done the same multi-step routine 3+ times? It may be a skill.</li>
+        <li>You cannot publish skills yourself; draft it and send to the PI.</li>
+        <li>PI reviews for safety and fit, then publishes to the lab.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Get help</h2>
+      <ul>
+        <li>Weekly PI office hours (time in the full setup guide).</li>
+        <li>The lab Slack, or message the PI.</li>
+        <li>Asking is never wrong. Write down the answer so you ask once.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>HOSL cohort, summer 2026</span>
+    <span>Companion to the full Claude setup guide</span>
+  </footer>
+</div>
+</body>
+</html>
