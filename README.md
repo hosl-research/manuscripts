@@ -28,6 +28,13 @@ Large language models are rapidly diffusing into academic and enterprise knowled
 
 ## Slides
 
+### Are You Talking to Me? Confidence Entanglement in AI-Assisted Operations
+**Brian Moriarty.** Slides and brief from the SREcon26 EMEA talk, Dublin, October 2026.
+
+An AI assistant now sits in the path of incident diagnosis, in the seat a second reviewer once held. It occupies the procedural position of an independent check while holding none of the independence, so what it returns reaches the responder as confirmation rather than as review. The brief names that failure, confidence entanglement, separates it from sycophancy and from confirmation bias under a new name, and sets out what a team can build instead: separation as a workflow gate rather than independence as a hope.
+
+[Slides](slides/are_you_talking_to_me_srecon_emea_2026_slides.pdf) · [Brief](papers/are_you_talking_to_me_srecon_emea_2026_brief.pdf)
+
 ### From Classroom to Enterprise: Architectural Patterns for LLM Integration
 **Brian Moriarty.** Slides from the IEEE SysCon 2026 talk.
 
