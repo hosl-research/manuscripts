@@ -6,18 +6,18 @@ The full lab website is in development. This page is a focused archive of HOSL m
 ## Papers
 
 ### Confirming Process, Missing Function: The Uninstrumented Oversight Layer in AI Transparency and Control Research
-**Brian Moriarty.** Published in the proceedings of the AI Transparency Conference (AITC 2026), Nuremberg, Germany.
+**Brian Moriarty.** Peer-reviewed paper, AI Transparency Conference (AITC 2026), Nuremberg, Germany. Published in [AI Transparency Journal 1(1)](https://aitj.org/index.php/journal/article/view/12).
 
 Audit infrastructure for AI-assisted workflows can document that human review occurred without establishing whether substantive evaluative judgment was exercised. The paper identifies the uninstrumented oversight layer as a structural gap in AI transparency and control research, and proposes a measurement and design agenda for the governance infrastructure that current frameworks lack.
 
 [PDF](papers/confirming_process_aitc_2026.pdf) · [Poster](papers/confirming_process_aitc_2026_poster.pdf) · [Slides](slides/confirming_process_aitc_2026_slides.pdf)
 
 ### Oversight That Degrades: Architectural Failure Modes in Human-LLM Control Structures
-**Brian Moriarty.** Published in the proceedings of the 3rd Technical AI Safety Conference (TAIS 2026), Oxford, UK.
+**Brian Moriarty.** Paper and poster, 3rd Technical AI Safety Conference (TAIS 2026), Oxford, UK.
 
 AI safety frameworks widely assume that human oversight provides a reliable control mechanism for AI systems.
 
-[PDF](papers/oversight_that_degrades_tais_2026.pdf) · [Poster](papers/oversight_that_degrades_tais_2026_poster.pdf) · [Proceedings page](https://tais2026.cc/proceedings/moriarty-oversight-degrades)
+[PDF](papers/oversight_that_degrades_tais_2026.pdf) · [Poster](papers/oversight_that_degrades_tais_2026_poster.pdf) · [Conference page](https://tais2026.cc/proceedings/moriarty-oversight-degrades)
 
 ### From Classroom to Enterprise: Architectural Patterns for LLM Integration
 **Brian Moriarty.** Published in the proceedings of IEEE SysCon 2026.
